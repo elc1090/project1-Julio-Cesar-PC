@@ -2,7 +2,9 @@
 module.exports = {
     content: [
         "./src/**/*.{html,js}",
-        "./node_modules/tw-elements/dist/js/**/*.js"
+        "./node_modules/tw-elements/dist/js/**/*.js",
+        "./public/**/*.{html,css,js}",
+        "./views/*.ejs",
             ],
     theme: { 
       extend: {

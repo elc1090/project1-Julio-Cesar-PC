@@ -4,6 +4,12 @@ const port = 3000
 
 app.set('view engine', 'ejs')
 app.use(express.static('src'))
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+  // redireciona para a rota /home
+  res.redirect('/home')
+})
 
 app.get('/home', (req, res) => {
     res.render('home')

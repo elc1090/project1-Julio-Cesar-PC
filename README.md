@@ -26,6 +26,7 @@ Preencha aqui uma lista detalhada de tecnologias usadas, por exemplo:
 - HTML
 - TailwindCSS
 - NodeJS
+- ngrok
 
 #### Ambiente de desenvolvimento
 

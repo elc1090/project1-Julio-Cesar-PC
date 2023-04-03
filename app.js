@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 7070
 
 app.set('view engine', 'ejs')
 app.use(express.static('src'))
@@ -25,6 +25,10 @@ app.get('/quem-somos', (req, res) => {
 
 app.get('/como-adotar', (req, res) => {
     res.render('como-adotar')
+})
+
+app.get('/contatos', (req, res) => {
+  res.render('contato')
 })
 
 app.listen(port, () => {

@@ -1,0 +1,70 @@
+<nav class="bg-primary">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="flex flex-1 items-stretch justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <a href="/home" class="p-1 rounded-md w-24"><img src="./images/logo.png"
+                alt="logo" class="w-24 object-scale-down"></a>
+          </div>
+          <div class=" sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <a href="/adote" 
+                class="text-quinary hover:bg-primaryHover rounded-md px-3 py-2 text-sm font-medium active:bg-gray-200 active:text-quinary"
+                id="adote"
+                >Adotar</a>
+
+              <a href="/quem-somos"
+                class="text-quinary hover:bg-primaryHover rounded-md px-3 py-2 text-sm font-medium active:bg-gray-200 active:text-quinary"
+                id="quem-somos"
+                >Quem somos</a>
+
+              <a href="/como-adotar"
+                class="text-quinary hover:bg-primaryHover rounded-md px-3 py-2 text-sm font-medium active:bg-gray-200 active:text-quinary"
+                id="como-adotar"
+                >Como adotar</a>
+
+              <a href="/contatos"
+                class="text-quinary hover:bg-primaryHover rounded-md px-3 py-2 text-sm font-medium active:bg-gray-200 active:text-quinary"
+                id="contatos"
+                >Contato</a>
+
+            </div>
+          </div>
+        </div>
+
+  </nav>
+
+  <script>
+    // navbar management
+    const url = window.location.href;
+
+    if(url.includes('adote')) {
+      document.getElementById('adote').classList.add('bg-gray-200');
+      document.getElementById('adote').classList.add('text-quinary');
+      document.getElementById('adote').classList.remove('hover:bg-primaryHover');
+    } else if(url.includes('quem-somos')) {
+      document.getElementById('quem-somos').classList.add('bg-gray-200');
+      document.getElementById('quem-somos').classList.add('text-quinary');
+      document.getElementById('quem-somos').classList.remove('hover:bg-primaryHover');
+    } else if(url.includes('como-adotar')) {
+      document.getElementById('como-adotar').classList.add('bg-gray-200');
+      document.getElementById('como-adotar').classList.add('text-quinary');
+      document.getElementById('como-adotar').classList.remove('hover:bg-primaryHover');
+    } else if(url.includes('contatos')) {
+      document.getElementById('contatos').classList.add('bg-gray-200');
+      document.getElementById('contatos').classList.add('text-quinary');
+      document.getElementById('contatos').classList.remove('hover:bg-primaryHover');
+    }
+
+    // mobile menu management
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuButton = document.getElementById('mobile-menu-btn');
+
+    mobileMenuButton.addEventListener('click', () => {
+      // display mobile menu
+      console.log('dropdown')
+    })
+
+
+
+  </script>

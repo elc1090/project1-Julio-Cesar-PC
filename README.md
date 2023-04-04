@@ -1,12 +1,5 @@
 [Color pallete](https://coolors.co/45425a-575c55-d3dbc6-6c7d47-96a13a-a1b135-acc12f)
 
-## Todo
-- [ ] Home com infos em geral fotos e pá.
-
-- [ ] Quem somos com infos sobre a mariazinha.
-
-- [ ] Como adotar, com infos de como adotar um cachorrinho.
-
 # Lar da Mariazinha
 
 ![Screenshot do projeto](https://mdswanson.com/static/chops-ux-step-4.png "Screenshot do projeto").
